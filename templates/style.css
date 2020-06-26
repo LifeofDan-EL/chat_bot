@@ -36,6 +36,7 @@ body {
 .avatar img {
     display: block;
     margin: 0 auto;
+    border-radius: 50%;
 }
 
 /* CHATBOX */
@@ -56,10 +57,10 @@ body {
     border: 3px inset;
     border-radius: 10px;
     padding: 10px;
-    min-height: 155px;
+    min-height: 170px;
     background-color: white;
     border-color: #eeeded #e2e2e2 #e2e2e2 #eeeded;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 #textInput, .userText, .botText {
@@ -75,8 +76,11 @@ body {
 }
 
 #userInput {
-    width: 100%;
-    margin: 0 0 0 auto;
+    margin: 0 0 20px auto;
+    position: fixed;
+    bottom: 0;
+    z-index: 2000;
+    width: 95vw;
 }
 
 #userInput #textInput {
