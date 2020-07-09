@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+/* HEADER */
+
+header {
+    margin: 15px 0;
+}
+
+h1, h4 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+    color: #808080;
+}
+
+h4 {
+    font-size: 17px;
+    margin-top: 10px;
+    color: #423d3d;
+}
+
+body {
+    background-color: #f7f7f7;
+}
+
+/* AVATAR */
+
+.avatar img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+/* CHATBOX */
+
+.boxed {
+    margin: 0 10px;
+    margin-top: 20px;
+}
+
+.boxed div {
+    margin: 0 auto;
+    max-width: 700px;
+    margin-top: 0;
+    margin-bottom: 130px;
+}
+
+.boxed div #chatbox {
+    border: 3px inset;
+    border-radius: 10px;
+    padding: 10px;
+    min-height: 170px;
+    background-color: white;
+    border-color: #eeeded #e2e2e2 #e2e2e2 #eeeded;
+    margin-bottom: 5px;
+}
+
+#textInput, .userText, .botText {
+    font-family: monospace;
+    font-size: 17px;
+}
+
+.userText, .botText {
+    color: white;
+    width: fit-content;
+    max-width: 80%;
+    margin-bottom: 10px;
+}
+
+#userInput {
+    margin: 0 0 20px auto;
+    position: fixed;
+    bottom: 0;
+    z-index: 2000;
+    width: 95vw;
+}
+
+#userInput #textInput {
+    padding: 10px;
+    width: 100%;
+    transition: border 0.2s ease-in;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+#userInput #textInput:focus {
+    border: 3px solid grey;
+}
+
+.userText {
+    background-color: #808080;
+    padding: 10px;
+    border-radius: 20px;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.botText {
+    color: white;
+    text-align: left;
+    line-height: 30px;
+    background-color: #4169e1;
+    padding: 10px;
+    border-radius: 20px;
+} 
+
+#tidbit {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+}
